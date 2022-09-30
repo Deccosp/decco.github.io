@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <title>decco saputro | absen 10</title>
+    <link rel="stylesheet" href="moon.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">my favourite</a>
+        <ul>
+            <li><a href="intro.html" class="active">Home</a></li>
+            <li><a href="intro.html">About</a></li> 
+            <li><a href="song.html">favourite</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Decco-kyun</h2>
+        <a href="intro.html" id="btn">lanjut bang</a>
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Decco Saputro</h2>
+        <p>Hello my friends everyone my name is decco saputro I am a student,my age has just turned sixteen years old on the twenty-tenth of September two thousand six,I am raised by my mother's father,baoak my mother is a native Javanese my father is from tawangmanggu and my mother is from saints,in my family I became the last child of three children,I have two older sisters.i live in blimbing-RW09-RT06-Karanglo-Tawangmanggu-Karanganyar. I am a student of SMK I attended SMKN 2 KARANGANYAR where I am a student of PPLG (Software and game Development) I went to school there for about a semester of more than one month, my educational history: I went to elementary school at SDN-01-Karanglo, when in elementary school I was an active student and always ranked in the top 3, and I continued my second education at SMPN-1-Tawangmanggu . I went to school there with my peers who also came from the same elementary school as me, then I continued my third education at SMKN2 Karangnyar<br> <br>I went to school at smkn 2 karanganyar just entered my first experience when entering the area of smkn 2 karanganyar this is very amazed and unfortunately happy, because the school smkn 2 karanganyar has a large and largest area in the entire karanganyar city approximately 3.5 hectares, and it is quite large, it can accommodate 2 motorbike and car parking lots and there is even a field, i am very happy to go to school here even in this school is also called as a terasri school in karanganyar because in this school has dense trees and has cool air in addition to the color of the walls in smkn 2 karanganyar (building buildings in smkn 2 karanganyar) all painted green color no wonder if it is pleasing to the eye and very beautiful, there we are instilled with strong discipline there is no tolerance if it has violated, the goal is to educate us to be students with character, good, wise, disciplined and polite, teacher doi smkn 2 karanganyar excellent and disciplined there also emphasizes strong togetherness,and also has strong security, i am very lucky to be in smkn 2 karanganyar
+        </p>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn')
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+        
+    </script>
+    
+
+</body>
+</html>
